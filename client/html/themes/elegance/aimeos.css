@@ -2,7 +2,7 @@
  * Aimeos elegance template CSS
  *
  * @license LGPLv3, http://opensource.org/licenses/LGPL-3.0
- * @copyright Aimeos (aimeos.org), 2014-2018
+ * @copyright Aimeos (aimeos.org), 2014-2017
  */
 
 @font-face {
@@ -26,13 +26,13 @@
 
 .aimeos .btn-primary,
 .aimeos .btn-primary:active {
-	background-color: #B0A060;
-	border: solid 1px #B0A060;
+	background-color: #414244;
+	border: solid 1px #414244;
 }
 
 .aimeos .btn-primary:hover {
-    background-color: #C0B070;
-	border: solid 1px #C0B070;
+    background-color: #414254;
+	border: solid 1px #414254;
 }
 
 .aimeos .btn:focus,
@@ -52,7 +52,7 @@
 }
 
 .aimeos .addbasket input {
-	border: solid 1px #B0A060;
+	border: solid 1px #414244;
 	text-align: center;
 	width: 4em;
 }
@@ -89,7 +89,7 @@
 
 .aimeos a:link:not(.btn),
 .aimeos a:visited:not(.btn) {
-	color: #B0A060;
+	color: #414244;
 }
 
 .aimeos input {
@@ -367,7 +367,7 @@
 	font: normal normal normal 14px/1 FontAwesome;
 	font-size: 133%;
 	content: "\f015";
-	color: #B0A060;
+	color: #414244;
 	vertical-align: bottom;
 }
 
@@ -385,19 +385,16 @@
 .catalog-filter-tree .disabled > .cat-item,
 .catalog-filter-tree .disabled > .cat-item:link,
 .catalog-filter-tree .disabled > .cat-item:visited,
-.catalog-filter-supplier .disabled .attr-name,
 .catalog-filter-attribute .disabled .attr-name {
 	color: #B0B0B0;
 }
 
 .catalog-filter-tree .cat-count:before,
-.catalog-filter-supplier .attr-count:before,
 .catalog-filter-attribute .attr-count:before {
 	content: "(";
 }
 
 .catalog-filter-tree .cat-count:after,
-.catalog-filter-supplier .attr-count:after,
 .catalog-filter-attribute .attr-count:after {
 	content: ")";
 }
@@ -428,14 +425,14 @@
 }
 
 .catalog-filter-search .value {
-	border-color: #B0A060;
+	border-color: #414244;
 	border-right: none;
 	margin: 0;
 }
 
 .catalog-filter-search .reset {
 	background-color: #FFFFFF;
-	border-color: #B0A060;
+	border-color: #414244;
 	border-right: none;
 	border-left: none;
 	width: 10% !important;
@@ -471,10 +468,10 @@
 }
 
 .catalog-filter-tree > h2 {
-	border-bottom: solid 1px #B0A060;
+/*	border-bottom: solid 1px #414244; */
+	display: inline-block;
 	font-size: 100%;
 	cursor: pointer;
-	display: block;
 	float: left;
 	width: 33.33%;
 	padding: 0.5em;
@@ -489,7 +486,7 @@
 
 .catalog-filter-tree > ul {
 	padding: 0.5em 0;
-	display: none;
+/*	display: none; */
 	clear: both;
 }
 
@@ -499,14 +496,31 @@ html.no-js .catalog-filter-tree:hover > ul {
 
 .catalog-filter-tree li {
 	padding: 0;
+	float: left;
+	margin: 5px;
+	text-align: center;
 }
 
+.cat-item {
+	background-color: #414244;
+	color: white;
+}
+li.cat-item {
+	padding: 0 0.5em;
+}
+.cat-count,
+.cat-name {
+	color: white;
+}
+
+/*
 .catalog-filter-tree > ul > li {
 	padding: 0.5em 0;
 }
+*/
 
 .catalog-filter-tree a.cat-item {
-	border-bottom: solid 1px #B0A060;
+/*	border-bottom: solid 1px #414244; */
 	white-space: nowrap;
 	padding: 0.5em 0;
 	display: block;
@@ -546,13 +560,13 @@ html.no-js .catalog-filter-tree:hover > ul {
 
 .catalog-filter-attribute > h2,
 .catalog-filter-supplier > h2 {
-	border-bottom: solid 1px #B0A060;
+/*	border-bottom: solid 1px #414244; */
+	display: inline-block;
 	text-align: center;
 	font-size: 100%;
 	cursor: pointer;
 	width: 33.33%;
 	float: left;
-	display: block;
 	padding: 0.5em;
 	margin: 0 0 1em 0;
 }
@@ -601,7 +615,7 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 
 .catalog-filter-attribute fieldset,
 .catalog-filter-supplier fieldset {
-	border-left: 1px solid #D0D0D0;
+/*	border-left: 1px solid #D0D0D0; */
 	background-color: #FFF;
 	display: inline-block;
 	vertical-align: top;
@@ -617,7 +631,7 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 
 .catalog-filter-attribute legend {
 	border: none;
-	border-left: 1px solid #D0D0D0;
+/*	border-left: 1px solid #D0D0D0; */
 	cursor: pointer;
 	font-size: 100%;
 	padding: 0.5em;
@@ -704,7 +718,7 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 
 /* Product list, stage section */
 .catalog-stage {
-	color: #B0A060;
+	color: #414244;
 	clear: both;
 }
 
@@ -783,7 +797,7 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 }
 
 .aimeos.catalog-suggest {
-	border-bottom: solid 1px #CCC;
+/*	border-bottom: solid 1px #CCC; */
 }
 
 .aimeos.catalog-suggest:last-child {
@@ -833,7 +847,7 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 }
 
 .catalog-list .product {
-	border-bottom: 1px solid #B0A060;
+/*	border-bottom: 1px solid #414244; */
 	display: inline-block;
 	vertical-align: top;
 	white-space: normal;
@@ -861,6 +875,9 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 	overflow: hidden;
 	height: 320px;
 	width: 240px;
+}
+
+.catalog-list a .media-list:hover {
 }
 
 .catalog-list a .media-item {
@@ -1032,7 +1049,7 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 }
 
 .catalog-list-items .list .product {
-	border-left: solid 1px #B0A060;
+/*	border-left: solid 1px #414244; */
 	border-bottom: none;
 	text-align: left;
 	width: 481px;
@@ -1047,7 +1064,7 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 .catalog-list-items .list .basket,
 .catalog-list-items .list .offer,
 .catalog-list-items .list .addbasket {
-	display: block;
+	display: inline-block;
 	width: 240px;
 	float: right;
 }
@@ -1210,7 +1227,7 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 .catalog-detail-basic h1.name {
 	text-transform: uppercase;
 	font-size: 110%;
-	color: #B0A060;
+	color: #414244;
 	margin: 0;
 	padding: 0;
 	padding-bottom: 0.5em;
@@ -1242,6 +1259,7 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 	padding: 0 0.33em;
 }
 
+.catalog-detail .catalog-actions .social-button-facebook:before,
 .catalog-detail .catalog-social .social-button-facebook:before {
 	content: "\f082";
 }
@@ -1284,7 +1302,7 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 
 /* Product detail, basket section */
 .catalog-detail-basket {
-	margin: 1% 0;
+	margin: 1%;
 	clear: right;
 }
 
@@ -1364,7 +1382,7 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 /* services */
 .catalog-detail-basket .service-intro {
 	cursor: pointer;
-	color: #B0A060;
+	color: #414244;
 }
 
 .catalog-detail-service .service-list {
@@ -1475,7 +1493,7 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 
 .catalog-list-items .selection .select-option:checked + .select-label,
 .catalog-detail-basket .selection .select-option:checked + .select-label {
-	border: solid 1px #B0A060;
+	border: solid 1px #414244;
 }
 
 .catalog-list-items .selection .select-option:disabled + .select-label,
@@ -1490,7 +1508,7 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 
 .catalog-list-items .selection input.select-option[type=number],
 .catalog-detail-basket .selection input.select-option[type=number] {
-	border: solid 1px #B0A060;
+	border: solid 1px #414244;
 	text-align: center;
 	padding: 0;
 	width: 4em;
@@ -1674,7 +1692,7 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 .basket-related-bought .header,
 .catalog-session .header,
 .catalog-detail .header {
-	border-bottom: solid 1px #B0A060;
+/*	border-bottom: solid 1px #414244; */
 	text-transform: uppercase;
 	text-align: left;
 	font-weight: normal;
@@ -1829,7 +1847,7 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 
 /* Mini basket */
 .basket-mini {
-	background-color: #B0A060;
+	background-color: #414244;
 	color: #555;
 }
 
@@ -1882,7 +1900,7 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 	text-decoration: none;
 	display: inline-block;
 	cursor: pointer;
-	color: #B0A060;
+	color: #414244;
 	color: #FFF;
 	padding: 1em;
 }
@@ -1939,7 +1957,7 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 }
 
 .basket-mini-product .basket-header tr {
-	border-bottom: 1px solid #D0D0D0;
+/*	border-bottom: 1px solid #D0D0D0; */
 }
 
 .basket-mini-product tr.delivery,
@@ -2009,7 +2027,7 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 }
 
 .basket-standard-coupon .coupon-new .coupon-code {
-	border: 1px solid #B0A060;
+	border: 1px solid #414244;
 	width: calc(100% - 3em);
 }
 
@@ -2047,12 +2065,12 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 
 .checkout-standard .steps .active {
 	color: #D0D0D0;
-	border-bottom: solid 8px #D0D0D0;
+/*	border-bottom: solid 8px #D0D0D0; */
 }
 
 .checkout-standard .steps .current {
 	color: #555;
-	border-bottom: solid 8px #555;
+/*	border-bottom: solid 8px #555; */
 }
 
 .checkout-standard .steps .order,
@@ -2246,7 +2264,7 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 }
 
 .checkout-standard .item-service .form-item-value input:checked + label {
-	border-left: 2px solid #D0D0D0;
+/*	border-left: 2px solid #D0D0D0; */
 }
 
 /* Checkout delivery/payment */
@@ -2264,6 +2282,10 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 .checkout-standard-payment .item {
 	border: solid 1px #D0D0D0;
 	margin: 1em 0.5em;
+}
+
+.checkout-standard-delivery .item-service  input,
+.checkout-standard-payment .item-service  input {
 }
 
 .checkout-standard-delivery .item-service .price-value,
@@ -2295,7 +2317,7 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 .aimeos .common-summary .error,
 .aimeos .common-summary-detail .error {
 	background-color: #ffeeee;
-	border-bottom: 1px solid #FF3300;
+/*	border-bottom: 1px solid #FF3300; */
 }
 
 .aimeos .common-summary .item li {
@@ -2344,7 +2366,7 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 
 .aimeos .common-summary .header,
 .aimeos .common-summary-detail .header {
-	border-bottom: solid 1px #B0A060;
+/*	border-bottom: solid 1px #414244; */
 	padding: 0.5em 1em;
 	margin: 0.5em;
 	margin-top: 0;
@@ -2382,7 +2404,7 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 }
 
 .aimeos .common-summary-detail tbody tr {
-	border-bottom: 1px solid #D0D0D0;
+/*	border-bottom: 1px solid #D0D0D0; */
 }
 
 .aimeos .common-summary-detail thead {
@@ -2391,7 +2413,7 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 }
 
 .aimeos .common-summary-detail thead tr {
-	border-bottom: 1px solid #D0D0D0;
+/*	border-bottom: 1px solid #D0D0D0; */
 	color: #555;
 }
 
@@ -2472,8 +2494,8 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 }
 
 .aimeos .common-summary-detail td.quantity input {
-	display: inline-block;
 	text-align: center;
+	display: inline;
 	width: 3em;
 }
 
@@ -2975,14 +2997,11 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
   -webkit-text-size-adjust: 100%;
   /* create separate layer, to avoid paint on window.onscroll in webkit/blink */
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
   outline: none; }
-
-.pswp * {
+  .pswp * {
 	-webkit-box-sizing: border-box;
-	box-sizing: border-box; }
-
-.pswp img {
+		box-sizing: border-box; }
+  .pswp img {
 	max-width: none; }
 
 /* style is added when JS option showHideOpacity is set to true */
@@ -3029,7 +3048,6 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
   opacity: 0;
   transform: translateZ(0);
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
   will-change: opacity; }
 
 .pswp__scroll-wrap {
@@ -3083,8 +3101,7 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 
 .pswp__container,
 .pswp__zoom-wrap {
-	backface-visibility: hidden;
-	-webkit-backface-visibility: hidden; }
+  -webkit-backface-visibility: hidden; }
 
 .pswp__item {
   position: absolute;
@@ -3106,8 +3123,7 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 	style is added to avoid flickering in webkit/blink when layers overlap
 */
 .pswp__img--placeholder {
-	backface-visibility: hidden;
-	-webkit-backface-visibility: hidden; }
+  -webkit-backface-visibility: hidden; }
 
 /*
 	div element that matches size of large image
@@ -3282,7 +3298,6 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
   -webkit-transition: opacity 0.25s ease-out;
 	  transition: opacity 0.25s ease-out;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
   will-change: opacity; }
 
 .pswp__share-modal--hidden {
@@ -3305,7 +3320,6 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
   -webkit-transition: -webkit-transform 0.25s;
 	  transition: transform 0.25s;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
   will-change: transform; }
   .pswp__share-tooltip a {
 	display: block;
@@ -3551,7 +3565,6 @@ a.pswp__share--download:hover {
 .pswp--has_mouse .pswp__button--arrow--left,
 .pswp--has_mouse .pswp__button--arrow--right {
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
   will-change: opacity;
   -webkit-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
 	  transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1); }
