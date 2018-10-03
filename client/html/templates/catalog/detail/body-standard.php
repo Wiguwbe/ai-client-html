@@ -3,7 +3,7 @@
 /**
  * @license LGPLv3, http://opensource.org/licenses/LGPL-3.0
  * @copyright Metaways Infosystems GmbH, 2012
- * @copyright Aimeos (aimeos.org), 2015-2018
+ * @copyright Aimeos (aimeos.org), 2015-2017
  */
 
 /* Available data:
@@ -263,7 +263,7 @@ if( isset( $this->detailProductItem ) )
 							); ?>
 						</div>
 
-
+						<!--
 						<div class="stock-list">
 							<div class="articleitem stock-actual"
 								data-prodid="<?= $enc->attr( $this->detailProductItem->getId() ); ?>"
@@ -276,6 +276,7 @@ if( isset( $this->detailProductItem ) )
 								</div>
 							<?php endforeach; ?>
 						</div>
+						-->
 
 
 						<div class="addbasket">
@@ -323,6 +324,7 @@ if( isset( $this->detailProductItem ) )
 				); ?>
 
 
+				<!-- dont use social, just FB on actions
 				<?= $this->partial(
 					/** client/html/catalog/partials/social
 					 * Relative path to the social partial template file
@@ -339,6 +341,7 @@ if( isset( $this->detailProductItem ) )
 					$this->config( 'client/html/catalog/partials/social', 'catalog/social-partial-standard.php' ),
 					array( 'productItem' => $this->detailProductItem )
 				); ?>
+				-->
 
 			</div>
 

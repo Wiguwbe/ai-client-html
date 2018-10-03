@@ -21,7 +21,7 @@ $params = $this->param();
 
 ?>
 <?php $this->block()->start( 'catalog/filter/supplier' ); ?>
-<section class="catalog-filter-supplier">
+<section class="catalog-filter-supplier col-md-4 col-sm-4">
 
 	<?php if( !empty( $suppliers ) ) : ?>
 

@@ -3,7 +3,7 @@
 /**
  * @license LGPLv3, http://opensource.org/licenses/LGPL-3.0
  * @copyright Metaways Infosystems GmbH, 2012
- * @copyright Aimeos (aimeos.org), 2015-2018
+ * @copyright Aimeos (aimeos.org), 2015-2017
  * @package Client
  * @subpackage Html
  */
@@ -221,6 +221,8 @@ abstract class Base
 	 */
 	protected function addDecorators( \Aimeos\Client\Html\Iface $client, array $decorators, $classprefix )
 	{
+		$iface = '\\Aimeos\\Client\\Html\\Common\\Decorator\\Iface';
+
 		foreach( $decorators as $name )
 		{
 			if( ctype_alnum( $name ) === false )
@@ -237,7 +239,9 @@ abstract class Base
 
 			$client = new $classname( $client, $this->context );
 
-			\Aimeos\MW\Common\Base::checkClass( '\\Aimeos\\Client\\Html\\Common\\Decorator\\Iface', $client );
+			if( !( $client instanceof $iface ) ) {
+				throw new \Aimeos\Client\Html\Exception( sprintf( 'Class "%1$s" does not implement "%2$s"', $classname, $iface ) );
+			}
 		}
 
 		return $client;
@@ -431,7 +435,9 @@ abstract class Base
 		}
 
 		$subnames = str_replace( ' ', '\\', ucwords( str_replace( '/', ' ', $path ) ) );
+
 		$classname = '\\Aimeos\\Client\\Html\\' . $subnames . '\\' . $name;
+		$interface = '\\Aimeos\\Client\\Html\\Iface';
 
 		if( class_exists( $classname ) === false ) {
 			throw new \Aimeos\Client\Html\Exception( sprintf( 'Class "%1$s" not available', $classname ) );
@@ -439,7 +445,9 @@ abstract class Base
 
 		$object = new $classname( $this->context );
 
-		\Aimeos\MW\Common\Base::checkClass( '\\Aimeos\\Client\\Html\\Iface', $object );
+		if( ( $object instanceof $interface ) === false ) {
+			throw new \Aimeos\Client\Html\Exception( sprintf( 'Class "%1$s" does not implement interface "%2$s"', $classname, $interface ) );
+		}
 
 		return $this->addClientDecorators( $object, $path );
 	}
@@ -598,7 +606,7 @@ abstract class Base
 			return null;
 		}
 
-		$cfg = $config->get( 'client/html', [] );
+		$cfg = $config->get( $confkey, [] );
 
 		$keys = array(
 			'body' => $this->getParamHash( $prefixes, $uid . ':' . $confkey . ':body', $cfg ),
@@ -637,7 +645,7 @@ abstract class Base
 
 		try
 		{
-			$cfg = $config->get( 'client/html', [] );
+			$cfg = $config->get( $confkey, [] );
 			$key = $this->getParamHash( $prefixes, $uid . ':' . $confkey . ':' . $type, $cfg );
 
 			$context->getCache()->set( $key, $value, $expire, array_unique( $tags ) );

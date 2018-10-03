@@ -3,7 +3,7 @@
 /**
  * @license LGPLv3, http://opensource.org/licenses/LGPL-3.0
  * @copyright Metaways Infosystems GmbH, 2013
- * @copyright Aimeos (aimeos.org), 2015-2018
+ * @copyright Aimeos (aimeos.org), 2015-2017
  * @package Client
  * @subpackage Html
  */
@@ -307,7 +307,7 @@ class Standard
 		try
 		{
 			$deliveryAddressItems = [];
-			$item = $controller->getItem( $context->getUserId(), ['customer/address'] );
+			$item = $controller->getItem( $context->getUserId(), ['address'] );
 
 			foreach( $item->getAddressItems() as $id => $addrItem ) {
 				$deliveryAddressItems[$id] = $orderAddressManager->createItem()->copyFrom( $addrItem );

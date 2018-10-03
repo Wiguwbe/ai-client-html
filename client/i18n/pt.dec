@@ -1,0 +1,809 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: aimeos-core\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-03 21:45+0200\n"
+"PO-Revision-Date: 2018-07-03 20:43+0000\n"
+"Last-Translator: Aimeos\n"
+"Language-Team: Portuguese (http://www.transifex.com/aimeos/aimeos-core/"
+"language/pt/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "%1$d article"
+msgid_plural "%1$d articles"
+msgstr[0] "%1$d item"
+msgstr[1] "%1$d itens"
+
+msgid ""
+"%1$s\n"
+"%2$s %3$s %4$s %5$s\n"
+"%6$s %7$s\n"
+"%8$s\n"
+"%9$s %10$s\n"
+"%11$s\n"
+"%12$s\n"
+"%13$s\n"
+"%14$s\n"
+"%15$s\n"
+"%16$s\n"
+"%17$s\n"
+"%18$s\n"
+msgstr ""
+"%1$s\n"
+"%2$s %3$s %4$s %5$s\n"
+"%6$s %7$s\n"
+"%8$s\n"
+"%9$s %10$s\n"
+"%11$s\n"
+"%12$s\n"
+"%13$s\n"
+"%14$s\n"
+"%15$s\n"
+"%16$s\n"
+"%17$s\n"
+"%18$s\n"
+
+msgid "%1$s %2$s"
+msgstr "%1$s %2$s"
+
+msgid "%1$s %2$s off"
+msgstr "%1$s %2$s off"
+
+msgid "%1$s ( %4$s%2$s%3$s )"
+msgstr "%1$s ( %4$s%2$s%3$s )"
+
+msgid "%1$s at %2$s"
+msgstr "%1$s em %2$s"
+
+msgid "%1$s%%"
+msgstr "%1$s%%"
+
+msgid "%1$s%3$s + %2$s%3$s"
+msgstr "%1$s%3$s + %2$s%3$s"
+
+msgid "+"
+msgstr "+"
+
+msgid "+ %1$s %2$s/item"
+msgstr "+ %1$s %2$s/item"
+
+msgid "+ %1$s%% VAT"
+msgstr "+ %1$s%% ICMS"
+
+msgid "+ Payment costs"
+msgstr "+ Custo de pagamento"
+
+msgid "+ Shipping"
+msgstr "+ Frete"
+
+msgid "+ shipping costs"
+msgstr "+ custos de envio"
+
+msgid "+1 123 456 7890"
+msgstr "+1 123 456 7890"
+
+msgid "-%1$s%%"
+msgstr "-%1$s%%"
+
+msgid "Account"
+msgstr "Conta"
+
+msgid "Add to basket"
+msgstr "Adicionar ao carrinho"
+
+msgid "Additional"
+msgstr "Adicional"
+
+msgid "Additional 2"
+msgstr "Adicional 2"
+
+msgid "Address with ID \"%1$s\" not found"
+msgstr "Endereço com ID \"%1$s\" não encontrado"
+
+msgid "Addresses"
+msgstr "Endereços"
+
+msgid ""
+"All deliveries shipped are subject to our terms and conditions, which are "
+"available on our website and which you accepted when placing your order.\n"
+"\n"
+"This email contains confidential information and is exclusively for the use "
+"of the person addressed. Should you not be that person then please reply to "
+"this e-mail and delete the e-mail and attachments afterwards."
+msgstr ""
+"Todas as encomendas enviadas estão sujeitas aos nossos termos e condições, "
+"os quais estão disponíveis em nosso site e que você aceitou ao realizar seu "
+"pedido.\n"
+"\n"
+"Este e-mail contêm informação confidencial e é de uso exclusivo à pessoa ao "
+"qual está endereçado. Caso você não seja esta pessoa por favor responda este "
+"e-mail e após isso exclua-o juntamente com seus anexos."
+
+msgid "All orders are subject to our terms and conditions."
+msgstr ""
+"Todos os pedidos estão sujeitos aos nossos termos e condições, os quais "
+"estão disponíveis em nosso site e que você aceitou ao realizar seu pedido.\n"
+"\n"
+"Este e-mail contêm informação confidencial e é de uso exclusivo à pessoa ao "
+"qual está endereçado. Caso você não seja esta pessoa por favor responda este "
+"e-mail e após isso exclua-o juntamente com seus anexos."
+
+msgid "An account has been created for you."
+msgstr "Uma conta foi criada para você"
+
+msgid "Article no.:"
+msgstr " "
+
+msgid "At least one billing address part is missing or invalid"
+msgstr "Pelo menos uma parte do endereço de cobrança está faltando ou inválida"
+
+msgid "At least one delivery address part is missing or invalid"
+msgstr "Pelo menos uma parte do endereço de entrega está faltando ou inválida"
+
+msgid "Attributes"
+msgstr "Atributos"
+
+msgid "Back"
+msgstr "Voltar"
+
+msgid "Basket"
+msgstr "Carrinho"
+
+msgid "Billing address"
+msgstr "Endereço de cobrança"
+
+msgid "Billing address part \"%1$s\" is invalid"
+msgstr "Parte \"%1$s\" do endereço de cobrança é inválida"
+
+msgid "Billing address part \"%1$s\" is missing"
+msgstr "Parte \"%1$s\" do endereço de cobrança está faltando"
+
+msgid "Birthday"
+msgstr "Aniversário"
+
+msgid "Bundled products"
+msgstr "Produtos em pacotes"
+
+msgid "Buy now"
+msgstr "Comprar agora"
+
+msgid "Categories"
+msgstr "Categorias"
+
+msgid "Change"
+msgstr "Alterar"
+
+msgid "Change payment"
+msgstr "Alterar pagamento"
+
+msgid "Characteristics"
+msgstr "Características"
+
+msgid "Check"
+msgstr "Checar"
+
+msgid "Checkout"
+msgstr "Checkout"
+
+msgid "City"
+msgstr "Cidade"
+
+msgid "Class \"%1$s\" does not implement \"%2$s\""
+msgstr "A classe \"%1$s\" não implementa \"%2$s\""
+
+msgid "Class \"%1$s\" does not implement interface \"%2$s\""
+msgstr "A classe \"%1$s\" não implementa a interface \"%2$s\""
+
+msgid "Class \"%1$s\" not available"
+msgstr "Classe \"%1$s\" não disponível"
+
+msgid "Class \"%1$s\" not found"
+msgstr "Classe \"%1$s\" não encontrada"
+
+msgid "Client HTML type is empty"
+msgstr "O cliente HTML está vazio"
+
+msgid "Client type \"%1$s\" must consist of two parts separated by \"/\""
+msgstr ""
+"O tipo de cliente \"%1$s\" deve ser formado por duas partes separadas por \"/"
+"\""
+
+msgid "Close"
+msgstr "Fechar"
+
+msgid "Company"
+msgstr "Empresa"
+
+msgid "Confirmation"
+msgstr "Confirmação"
+
+msgid "Country"
+msgstr "País"
+
+msgid "Coupon codes"
+msgstr "Códigos de cupons"
+
+msgid "Coupons"
+msgstr "Cupons"
+
+msgid "Customer with ID \"%1$s\" not found"
+msgstr "Cliente com ID %1$s não encontrado"
+
+msgid "Dear %1$s %2$s %3$s"
+msgstr "Prezado %1$s %2$s %3$s"
+
+msgid "Dear Sir or Madam"
+msgstr "Prezado Senhor ou Senhora"
+
+msgid "Delivery"
+msgstr "Entrega"
+
+msgid "Delivery address"
+msgstr "Endereço de entrega"
+
+msgid "Delivery address part \"%1$s\" is invalid"
+msgstr "Parte \"%1$s\" do endereço de entrega é inválida"
+
+msgid "Delivery address part \"%1$s\" is missing"
+msgstr "Parte \"%1$s\" do endereço de entrega está faltando"
+
+msgid "Description"
+msgstr "Descrição"
+
+msgid "Details"
+msgstr "Detalhes"
+
+msgid "Download App"
+msgstr "Download da App Evollu"
+
+msgid "Downloads"
+msgstr "Downloads"
+
+msgid "E-Mail"
+msgstr "E-mail"
+
+msgid "E-mail notification"
+msgstr "Notificação de e-mail"
+
+msgid "End date"
+msgstr "Data final"
+
+msgid "Favorite products"
+msgstr "Produtos favoritos"
+
+msgid "Fax"
+msgstr "Fax"
+
+msgid "Fields with an * are mandatory"
+msgstr "Os campos com * são obrigatórios"
+
+msgid "Filter"
+msgstr "Filtro"
+
+msgid "First name"
+msgstr "Nome"
+
+msgid "GB999999973"
+msgstr "GB999999973"
+
+msgid "Go"
+msgstr "Ir"
+
+msgid ""
+"I accept the <a href=\"%1$s\" target=\"_blank\" title=\"terms and conditions"
+"\" alt=\"terms and conditions\">terms and conditions</a> and <a href=\"%2$s"
+"\" target=\"_blank\" title=\"privacy policy\" alt=\"privacy policy\">privacy "
+"policy</a>"
+msgstr ""
+"Eu aceito os <a href=\"%1$s\" target=\"_blank\" title=\"terms and conditions"
+"\" alt=\"terms and conditions\">termos e condições</a> e a <a href=\"%2$s\" "
+"target=\"_blank\" title=\"privacy policy\" alt=\"privacy policy\">política "
+"de privacidade</a>"
+
+msgid "If back in stock"
+msgstr "Se tiver em stock"
+
+msgid "If price decreases"
+msgstr "Se o preço baixar"
+
+msgid "If you have any questions, please reply to this e-mail"
+msgstr "Se tiver alguma dúvida, por favor responda este e-mail"
+
+msgid "Incl. %1$s%% VAT"
+msgstr "Incl. %1$s%% Taxas"
+
+msgid "Included rebates"
+msgstr "Descontos incluídos"
+
+msgid "Invalid characters in class name \"%1$s\""
+msgstr "Caracteres inválidos no nome da classe \"%1$s\""
+
+msgid "Invalid characters in client name \"%1$s\""
+msgstr "Caracteres inválidos no nome do cliente \"%1$s\""
+
+msgid "Invalid characters in client name \"%1$s\" in \"%2$s\""
+msgstr "Caracteres inválidos no nome do cliente \"%1$s\" em \"%2$s\""
+
+msgid "Invalid class name \"%1$s\""
+msgstr "Nome de classe inválido \"%1$s\""
+
+msgid "Invalid domain \"%1$s\""
+msgstr "Domínio \"%1$s\" inválido"
+
+msgid "Invalid factory \"%1$s\""
+msgstr "Fábrica inválida \"%1$s\""
+
+msgid "Invalid process response from service provider with code \"%1$s\""
+msgstr "Resposta de processo do provedor de serviços \"%1$s\" inválida"
+
+msgid "Language"
+msgstr "Idioma"
+
+msgid "Last name"
+msgstr "Sobrenome"
+
+msgid "Last seen"
+msgstr "Vistos recentemente"
+
+msgid "Latest"
+msgstr "Últimas"
+
+msgid "Name"
+msgstr "Nome"
+
+msgid "Next"
+msgstr "Próximo"
+
+msgid ""
+"No articles found for <span class=\"searchstring\">\"%1$s\"</span>. Please "
+"try again with a different keyword."
+msgstr ""
+"Nenhum item encontrado para <span class=\"searchstring\">\"%1$s\"</span>. "
+"Por favor, tente novamente com outra palavra-chave."
+
+msgid "No product with ID \"%1$s\" found"
+msgstr "Produto com ID \"%1$s\" não encontrado"
+
+msgid "No service for code \"%1$s\" found"
+msgstr "Nenhum serviço para o código \"%1$s\" foi encontrado"
+
+msgid "No type item for \"%1$s/%2$s\" in \"%3$s\" found"
+msgstr "Nenhum tipo para \"%1$s/%2$s\" em \"%3$s\" encontrado"
+
+msgid "No view available"
+msgstr "Sem visualização disponível"
+
+msgid "Number of coupon codes exceeds the limit"
+msgstr "Número de códigos de cupom excede o limite"
+
+msgid "Object doesn't implement \"%1$s\""
+msgstr "O objeto não implementa \"%1$s\""
+
+msgid "One month"
+msgstr "Um mês"
+
+msgid "One or more products you are watching have been updated."
+msgstr "Um ou mais produtos que você está observando foram atualizados"
+
+msgid "One week"
+msgstr "Uma semana"
+
+msgid "Options"
+msgstr "Opções"
+
+msgid "Order ID"
+msgstr "ID do Pedido"
+
+msgid "Order channel"
+msgstr "Canal do pedido"
+
+msgid "Order details"
+msgstr "Detalhes do pedido"
+
+msgid "Order history"
+msgstr "Histórico do pedido"
+
+msgid "Order status"
+msgstr "Status do pedido"
+
+msgid "Order with ID \"%1$s\" not found"
+msgstr "Pedido com ID \"%1$s\" não encontrado"
+
+msgid "Other customers also bought"
+msgstr "Outros clientes também compraram"
+
+msgid "Page %1$d of %2$d"
+msgstr "Página %1$d de %2$d"
+
+msgid "Password"
+msgstr "Senha"
+
+msgid "Pay now"
+msgstr "Pagar agora"
+
+msgid "Payment"
+msgstr "Pagamento"
+
+msgid "Payment costs"
+msgstr "Custos de pagamento"
+
+msgid "Payment status"
+msgstr "Status de pagamento"
+
+msgid "Pinned products"
+msgstr "Produtos marcados"
+
+msgid "Please accept the terms and conditions"
+msgstr "Por favor aceite os termos e condições"
+
+msgid "Please check your order"
+msgstr "Por favor, verifique seu pedido"
+
+msgid "Please choose your delivery method"
+msgstr "Por favor, escolha o método de entrega"
+
+msgid "Please choose your payment method"
+msgstr "Por favor, escolha o método de pagamento"
+
+msgid "Please enter at least three characters"
+msgstr "Por favor, informe pelo menos três caracteres"
+
+msgid "Please enter your payment details"
+msgstr "Por favor, insira os detalhes do pagamento"
+
+msgid "Please select"
+msgstr "Por favor selecione"
+
+msgid "Postal code"
+msgstr "Código postal"
+
+msgid "Previous"
+msgstr "Anterior"
+
+msgid "Price"
+msgstr "Preço"
+
+msgid "Proceed"
+msgstr "Prosseguir"
+
+msgid "Processing the payment failed"
+msgstr "O processamento do pagamento falhou"
+
+msgid "Product"
+msgstr "Produto"
+
+msgid "Products you might be also interested in"
+msgstr "Produtos que talvez lhe interesse"
+
+msgid "Properties"
+msgstr "Propriedades"
+
+msgid "Qty"
+msgstr "Qtd"
+
+msgid "Quantity"
+msgstr "Quantidade"
+
+msgid "Related"
+msgstr "Relacionado"
+
+msgid "Relevance"
+msgstr "Relevância"
+
+msgid "Result for \"%1$s\""
+msgstr "Resultados para \"%1$s\""
+
+msgid "Salutation"
+msgstr "Saudação"
+
+msgid "Search"
+msgstr "Pesquisar"
+
+msgid ""
+"Search result for <span class=\"searchstring\">\"%1$s\"</span> (%2$d article)"
+msgid_plural ""
+"Search result for <span class=\"searchstring\">\"%1$s\"</span> (%2$d "
+"articles)"
+msgstr[0] ""
+"Resultado da busca por  <span class=\"searchstring\">\"%1$s\"</span> (%2$d "
+"item)"
+msgstr[1] ""
+"Resultado da busca por  <span class=\"searchstring\">\"%1$s\"</span> (%2$d "
+"itens)"
+
+msgid "Select country"
+msgstr "Selecionar país"
+
+msgid "Select currency"
+msgstr "Selecionar moeda"
+
+msgid "Select language"
+msgstr "Selecionar idioma"
+
+msgid "Select salutation"
+msgstr "Selecione a saudação"
+
+msgid "Select state"
+msgstr "Selecione o estado"
+
+msgid "Service fees"
+msgstr "Taxa de serviço"
+
+msgid "Services"
+msgstr "Serviços"
+
+msgid "Shipping"
+msgstr "Envio"
+
+msgid "Show"
+msgstr "Mostrar"
+
+msgid "Show all quotes"
+msgstr "Mostrar todas as cotações"
+
+msgid "Sort by:"
+msgstr "Ordenar por:"
+
+msgid "State"
+msgstr "Estado"
+
+msgid "Stock: %1$s, %2$s"
+msgstr "Stock: %1$s, %2$s"
+
+msgid "Stock: %1$s, %2$s, back on %3$s"
+msgstr "Stock: %1$s, %2$s, de volta em %3$s"
+
+msgid "Street"
+msgstr "Rua"
+
+msgid "Sub-total"
+msgstr "Sub-total"
+
+msgid "Suggested products"
+msgstr "Produtos sugeridos"
+
+msgid "Sum"
+msgstr "Soma"
+
+msgid "Telephone"
+msgstr "Fone"
+
+msgid "Template \"%1$s\" not available"
+msgstr "Modelo \"%1$s\" não disponível"
+
+msgid "Terms and conditions"
+msgstr "Termos e condições"
+
+msgid "Thank you for your order %1$s from %2$s."
+msgstr "Obrigado pelo seu pedido %1$s de %2$s."
+
+msgid ""
+"Thank you for your order %1$s from %2$s.\n"
+"\n"
+"The order is pending until we receive the final payment. If you've chosen to "
+"pay in advance, please transfer the money to our bank account with the order "
+"ID %1$s as reference."
+msgstr ""
+"Obrigado pelo seu pedido %1$s de %2$s.\n"
+"\n"
+"O pedido estará pendente até o recebimento do pagamento. Se você preferir "
+"adiantar o pagamento, por favor transfira o dinheiro para a nossa conta "
+"bancária com o ID do pedido %1$s como referência."
+
+msgid ""
+"Thank you for your order %1$s from %2$s.\n"
+"\n"
+"We received the payment and will care about your order immediately."
+msgstr ""
+"Obrigado pelo seu pedido %1$s de %2$s.\n"
+"\n"
+"Nós recebemos o pagamento e iremos providenciar o envio."
+
+msgid ""
+"Thank you for your order and authorizing the payment.\n"
+"An e-mail with the order details will be sent to you within the next few "
+"minutes."
+msgstr ""
+"Obrigado pelo seu pedido e por autorizar o pagamento.\n"
+"Em breve lhe será enviado um e-mail com os detalhes do pedido."
+
+msgid ""
+"Thank you for your order.\n"
+"We received your payment and an e-mail with the order details will be sent "
+"to you within the next few minutes."
+msgstr ""
+"Obrigado pelo seu pedido.\n"
+"Recebemos seu pagamento e em breve será enviado um e-mail com os detalhes do "
+"pedido."
+
+msgid ""
+"The delivery status of your order %1$s from %2$s has been changed to \"%3$s"
+"\"."
+msgstr "O status do pedido %1$s foi alterado de %2$s para \"%3$s\"."
+
+msgid ""
+"The order was canceled.\n"
+"Do you wish to retry your order?"
+msgstr ""
+"O pedido foi cancelado.\n"
+"Deseja refazer seu pedido?"
+
+msgid "The parcel for your order %1$s from %2$s could not be delivered."
+msgstr "O seu pedido %1$s de %2$s não pôde ser entregue."
+
+msgid ""
+"The payment confirmation for your order is still pending.\n"
+"You will get an e-mail as soon as the payment is authorized."
+msgstr ""
+"A confirmação de pagamento do seu pedido ainda está pendente.\n"
+"Você irá receber um e-mail assim que o pagamento for autorizado."
+
+msgid "The payment for your order %1$s from %2$s has been refunded."
+msgstr "O pagamento do pedido %1$s de %2$s foi ressarcido"
+
+msgid "Three month"
+msgstr "Três meses"
+
+msgid "Time frame"
+msgstr "Prazo"
+
+msgid "Top seller"
+msgstr "Melhor vendedor"
+
+msgid "Total"
+msgstr "Total"
+
+msgid "Total quantity"
+msgstr "Quantidade total"
+
+msgid "Try again"
+msgstr "Tentar novamente"
+
+msgid "Two weeks"
+msgstr "Duas semanas"
+
+msgid "Unable to call method \"%1$s\""
+msgstr "Incapaz de chamar o método \"%1$s\""
+
+msgid "Unable to create an account for \"%1$s\": %2$s"
+msgstr "Incapaz de criar uma conta para \"%1$s\": %2$s"
+
+msgid "Unable to save address for customer \"%1$s\": %2$s"
+msgstr "Incapaz de salvar o endereço do cliente \"%1$s\": %2$s"
+
+msgid "Unable to set cache entry: %1$s"
+msgstr "Não foi possível definir a entrada de cache: %1$s"
+
+msgid ""
+"Unfortunately, the payment for your order was refused.\n"
+"Do you wish to retry?"
+msgstr ""
+"Infelizmente o pagamento do seu pedido foi recusado.\n"
+"Deseja tentar novamente?"
+
+msgid "Update"
+msgstr "Atualizar"
+
+msgid "Vat ID"
+msgstr "CNPJ"
+
+msgid "Watch"
+msgstr "Acompanhar"
+
+msgid "Watched products"
+msgstr "Produtos acompanhados"
+
+msgid "We received the returned parcel for your order %1$s from %2$s."
+msgstr "Nós recebemos a devolução de seu pedido %1$s de %2$s."
+
+msgid "Web site"
+msgstr "Site"
+
+msgid "X"
+msgstr "X"
+
+msgid "Y-m-d"
+msgstr "Y-m-d"
+
+msgid "You are here:"
+msgstr "Você está aqui:"
+
+msgid "You will now be forwarded to the next step"
+msgstr "Você será direcionado para o próximo passo"
+
+msgid "Your account"
+msgstr "Sua conta"
+
+msgid "Your choice"
+msgstr "Sua escolha"
+
+msgid "Your new account"
+msgstr "Sua nova conta"
+
+msgid "Your order %1$s"
+msgstr "Seu pedido %1$s"
+
+msgid "Your order %1$s from %2$s has been dispatched."
+msgstr "Seu pedido %1$s de %2$s foi despachado."
+
+msgid "Your search result"
+msgstr "Resultados da pesquisa"
+
+msgid "Your watched products"
+msgstr "Seus produtos observados"
+
+msgid "address"
+msgstr "endereço"
+
+msgid "clear all"
+msgstr "limpar tudo"
+
+msgid "delivery"
+msgstr "entrega"
+
+msgid "from %1$s"
+msgstr "de %1$s"
+
+msgid "like billing address"
+msgstr "igual ao endereço de cobrança"
+
+msgid "new address"
+msgstr "novo endereço"
+
+msgid "none"
+msgstr "nenhum"
+
+msgid "order"
+msgstr "pedido"
+
+msgid "payment"
+msgstr "pagamento"
+
+msgid "process"
+msgstr "processo"
+
+msgid "stock-high"
+msgstr "stock-alto"
+
+msgid "stock-low"
+msgstr "stock-baixo"
+
+msgid "stock-out"
+msgstr "fora de stock"
+
+msgid "stock-unlimited"
+msgstr "stock-ilimitado"
+
+msgid "summary"
+msgstr "resumo"
+
+msgid "▲ Name"
+msgstr "▲ Nome"
+
+msgid "▲ Price"
+msgstr "▲ Preço"
+
+msgid "▶"
+msgstr "▶"
+
+msgid "▶▶"
+msgstr "▶▶"
+
+msgid "▼"
+msgstr "▼ "
+
+msgid "▼ Name"
+msgstr "▼ Nome"
+
+msgid "▼ Price"
+msgstr "▼ Preço"
+
+msgid "◀"
+msgstr "◀"
+
+msgid "◀◀"
+msgstr "◀◀"

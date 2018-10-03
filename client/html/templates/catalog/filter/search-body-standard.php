@@ -3,7 +3,7 @@
 /**
  * @license LGPLv3, http://opensource.org/licenses/LGPL-3.0
  * @copyright Metaways Infosystems GmbH, 2013
- * @copyright Aimeos (aimeos.org), 2015-2018
+ * @copyright Aimeos (aimeos.org), 2015-2017
  */
 
 $enc = $this->encoder();
@@ -103,22 +103,25 @@ $suggestUrl = $enc->attr( $this->url( $suggestTarget, $suggestController, $sugge
 
 ?>
 <?php $this->block()->start( 'catalog/filter/search' ); ?>
-<section class="catalog-filter-search">
+<section class="catalog-filter-search col-md-3 col-sm-4" style="float: right; margin:0;padding:7.25px 0;">
 
 	<h2><?= $enc->html( $this->translate( 'client', 'Search' ), $enc::TRUST ); ?></h2>
-	<div class="input-group">
-		<input class="form-control value" type="text"
+	<div class="input-group" style="float: right">
+		<input class="form-control value" type="text" style="border-radius: 0;"
 			name="<?= $name; ?>" value="<?= $phrase; ?>"
 			data-url="<?= $suggestUrl; ?>" data-hint="<?= $hint; ?>"
 		/><!--
-		--><button class="btn btn-default reset" type="reset">
+		--><!--<button class="btn btn-default reset" type="reset" style="border-radius: 0;">
 			<span class="symbol"/>
-		</button><!--
-		--><button class="btn btn-primary" type="submit">
-			<?= $enc->html( $this->translate( 'client', 'Go' ), $enc::TRUST ); ?>
+		</button>--><!--
+		--><button class="btn btn-primary" type="submit" style="border-radius: 0; background-color: #1abc9c; width: 30% !important; border: 1px solid #414244;border-left:0">
+			<?= $enc->html( $this->translate( 'client', 'Search' ), $enc::TRUST ); ?>
 		</button>
 	</div>
 
 </section>
+</div>
+<!--<section class="col-md-6 col-sm-3" style="float: right; height: 48.5px; background-color: #414244;"><br></section>
+-->
 <?php $this->block()->stop(); ?>
 <?= $this->block()->get( 'catalog/filter/search' ); ?>

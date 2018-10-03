@@ -3,7 +3,7 @@
 /**
  * @license LGPLv3, http://opensource.org/licenses/LGPL-3.0
  * @copyright Metaways Infosystems GmbH, 2013
- * @copyright Aimeos (aimeos.org), 2015-2018
+ * @copyright Aimeos (aimeos.org), 2015-2017
  * @package Client
  * @subpackage Html
  */
@@ -306,6 +306,10 @@ class Standard
 		$view = $this->getView();
 		$context = $this->getContext();
 
+		if( ( $code = $view->param( 'code' ) ) === null ) {
+			return;
+		}
+
 		try
 		{
 			$session = $context->getSession();
@@ -317,12 +321,7 @@ class Standard
 			$orderCntl = \Aimeos\Controller\Frontend\Factory::createController( $context, 'order' );
 			$serviceCntl = \Aimeos\Controller\Frontend\Factory::createController( $context, 'service' );
 
-			if( ( $code = $view->param( 'code' ) ) !== null ) {
-				$orderItem = $serviceCntl->updateSync( $view->request(), $code, $orderid );
-			} else {
-				$orderItem = $orderCntl->getItem( $orderid );
-			}
-
+			$orderItem = $serviceCntl->updateSync( $view->request(), $code, $orderid );
 			$orderCntl->update( $orderItem );  // update stock, coupons, etc.
 
 			parent::process();

@@ -3,7 +3,7 @@
 /**
  * @license LGPLv3, http://opensource.org/licenses/LGPL-3.0
  * @copyright Metaways Infosystems GmbH, 2012
- * @copyright Aimeos (aimeos.org), 2015-2018
+ * @copyright Aimeos (aimeos.org), 2015-2017
  * @package Client
  * @subpackage Html
  */
@@ -449,12 +449,12 @@ class Standard
 		$catid = (string) $view->param( 'f_catid' );
 
 		if( $catid == '' ) {
-			$catid = $config->get( 'client/html/catalog/lists/catid-default', '' );
+			$catid = $config->get( 'client/html/catalog/lists/catid-default', '' );	// default
 		}
 
 		if( $text === '' && $catid !== '' )
 		{
-			$domains = $config->get( 'client/html/catalog/domains', array( 'media', 'text' ) );
+			$domains = $config->get( 'client/html/catalog/domains', array( 'media', 'text') );
 			$controller = \Aimeos\Controller\Frontend\Factory::createController( $context, 'catalog' );
 
 			$catids = ( !is_array( $catid ) ? explode( ',', $catid ) : $catid );

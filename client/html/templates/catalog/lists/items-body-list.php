@@ -2,7 +2,7 @@
 
 /**
  * @license LGPLv3, http://opensource.org/licenses/LGPL-3.0
- * @copyright Aimeos (aimeos.org), 2016-2018
+ * @copyright Aimeos (aimeos.org), 2016-2017
  */
 
 $enc = $this->encoder();
@@ -22,7 +22,6 @@ $basketSite = $this->config( 'client/html/basket/standard/url/site' );
 
 $basketParams = ( $basketSite ? ['site' => $basketSite] : [] );
 
-
 ?>
 <?php $this->block()->start( 'catalog/lists/items' ); ?>
 <div class="catalog-list-items">
@@ -31,6 +30,7 @@ $basketParams = ( $basketSite ? ['site' => $basketSite] : [] );
 
 		<?php foreach( $this->get( 'listProductItems', [] ) as $id => $productItem ) : $firstImage = true; ?>
 			<?php
+			
 				$conf = $productItem->getConfig(); $css = ( isset( $conf['css-class'] ) ? $conf['css-class'] : '' );
 				$params = array( 'd_name' => $productItem->getName( 'url' ), 'd_prodid' => $id );
 				if( $position !== null ) { $params['d_pos'] = $position++; }
@@ -42,7 +42,6 @@ $basketParams = ( $basketSite ? ['site' => $basketSite] : [] );
 				data-reqstock="<?= (int) $this->config( 'client/html/basket/require-stock', true ); ?>"
 				itemtype="http://schema.org/Product"
 				itemscope="">
-
 
 				<a class="media-list" href="<?= $url; ?>">
 					<?php foreach( $productItem->getRefItems( 'media', 'default', 'default' ) as $mediaItem ) : ?>

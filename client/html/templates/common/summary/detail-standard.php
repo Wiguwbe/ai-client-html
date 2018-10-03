@@ -3,7 +3,7 @@
 /**
  * @license LGPLv3, http://opensource.org/licenses/LGPL-3.0
  * @copyright Metaways Infosystems GmbH, 2013
- * @copyright Aimeos (aimeos.org), 2015-2018
+ * @copyright Aimeos (aimeos.org), 2015-2017
  */
 
 /* Available data:
@@ -198,11 +198,7 @@ $errors = $this->get( 'summaryErrorCodes', [] );
 						<img src="<?= $enc->attr( $this->content( $url ) ); ?>" />
 					<?php endif; ?>
 
-					<?php
-						$name = $product->getName();
-						if( ( $pos = strpos( $name, "\n" ) ) !== false ) { $name = substr( $name, 0, $pos ); }
-						$params = array_merge( $this->param(), ['d_prodid' => $product->getProductId(), 'd_name' => $name] );
-					?>
+					<?php $params = array_merge( $this->param(), ['d_prodid' => $product->getProductId(), 'd_name' => $product->getName( 'url' )] ); ?>
 					<a class="product-name" href="<?= $enc->attr( $this->url( ( $product->getTarget() ?: $detailTarget ), $detailController, $detailAction, $params, [], $detailConfig ) ); ?>">
 						<?= $enc->html( $product->getName(), $enc::TRUST ); ?>
 					</a>

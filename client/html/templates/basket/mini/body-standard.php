@@ -113,9 +113,9 @@ $jsonConfig = $this->config( 'client/jsonapi/url/config', [] );
 /// Price format with price value (%1$s) and currency (%2$s)
 $priceFormat = $this->translate( 'client', '%1$s %2$s' );
 
-
 ?>
-<section class="aimeos basket-mini" data-jsonurl="<?= $enc->attr( $this->url( $jsonTarget, $jsonController, $jsonAction, $basketParams, [], $jsonConfig ) ); ?>">
+<div style="background-color: #414244; height: 48.5px">
+<section class="aimeos basket-mini col-md-2 col-sm-4" style="float: right;" data-jsonurl="<?= $enc->attr( $this->url( $jsonTarget, $jsonController, $jsonAction, $basketParams, [], $jsonConfig ) ); ?>">
 
 	<?php if( ( $errors = $this->get( 'miniErrorList', [] ) ) !== [] ) : ?>
 		<ul class="error-list">
@@ -152,7 +152,7 @@ $priceFormat = $this->translate( 'client', '%1$s %2$s' );
 
 		<div class="basket-mini-product">
 			<span class="basket-toggle toggle-close"></span>
-			<table class="basket">
+			<table class="basket" style="font-size: 13px; right: 0; z-index: 50;">
 				<thead class="basket-header">
 					<tr>
 						<th class="name"><?= $enc->html( $this->translate( 'client', 'Product' ), $enc::TRUST ); ?></th>

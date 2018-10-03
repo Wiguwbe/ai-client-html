@@ -2,7 +2,7 @@
 
 /**
  * @license LGPLv3, http://opensource.org/licenses/LGPL-3.0
- * @copyright Aimeos (aimeos.org), 2015-2018
+ * @copyright Aimeos (aimeos.org), 2015-2017
  */
 
 $enc = $this->encoder();
@@ -31,10 +31,31 @@ $config = $this->config( 'client/html/catalog/lists/url/config', [] );
  * @category Developer
  */
 
+$nodes = $this->get('nodes',[]);
+
+$parent = $nodes[0];
+
+if($level==0)
+{
+	$nodes = $nodes[0]->getChildren();
+	$level += 1;
+}
 
 ?>
-<ul class="level-<?= $enc->attr( $level ); ?>">
-	<?php foreach( $this->get( 'nodes', [] ) as $item ) : ?>
+<ul class="level-<?= $enc->attr( $level ); ?> ul-linear">
+	<?php /* main category (products) */ ?>
+	<li class="cat-item catid-7 nochild catcode-product" data-id="7" style="margin-left: 20px;">
+		<a class="cat-item" href="/list"><!-- or '/list?f_name=Product&f_catid=7' -->
+			<span class="cat-name"><?= $enc->html($parent->getName(), $enc::TRUST ); ?></span>
+		</a>
+	</li>
+	<li style="background-color: white">
+		<div id="filter-toggle-control" class="ft-closed" onclick="cat_toggle()" style="cursor: pointer; padding: 0.5em; font-weight: bold">
+			<span>&rsaquo;&rsaquo;</span>
+		</div>
+	</li>
+	<div id="filter-more" class="filter-more" style="display:none;margin:0;padding:0">
+	<?php foreach( $nodes as $item ) : ?>
 		<?php if( $item->getStatus() > 0 ) : ?>
 
 			<?php $id = $item->getId(); $config = $item->getConfig(); ?>
@@ -45,7 +66,7 @@ $config = $this->config( 'client/html/catalog/lists/url/config', [] );
 			<li class="cat-item catid-<?= $enc->attr( $id . $class ); ?>" data-id="<?= $id; ?>" >
 
 				<a class="cat-item" href="<?= $enc->attr( $this->url( ( $item->getTarget() ?: $target ), $controller, $action, $params, [], $config ) ); ?>"><!--
-					--><div class="media-list"><!--
+					--><!--<div class="media-list">--><!--
 
 						<?php foreach( $item->getListItems( 'media', 'icon' ) as $listItem ) : ?>
 							<?php if( ( $mediaItem = $listItem->getRefItem() ) !== null ) : ?>
@@ -56,7 +77,7 @@ $config = $this->config( 'client/html/catalog/lists/url/config', [] );
 							<?php endif; ?>
 						<?php endforeach; ?>
 
-					--></div><!--
+					--><!--</div>--><!--
 					--><span class="cat-name"><?= $enc->html( $item->getName(), $enc::TRUST ); ?></span><!--
 				--></a>
 
@@ -68,4 +89,6 @@ $config = $this->config( 'client/html/catalog/lists/url/config', [] );
 			</li>
 		<?php endif; ?>
 	<?php endforeach; ?>
+	</div>
 </ul>
+

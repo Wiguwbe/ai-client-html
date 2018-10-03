@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Aimeos\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-09 15:12+0200\n"
+"POT-Creation-Date: 2018-07-03 21:38+0200\n"
 "PO-Revision-Date: 2012-12-24 16:33+0100\n"
 "Last-Translator: Norbert Sendetzky <norbert@aimeos.com>\n"
 "Language-Team: English (http://www.transifex.com/projects/p/aimeos/language/en/)\n"
@@ -71,12 +71,14 @@ msgid "%1$s ( %4$s%2$s%3$s )"
 msgstr "%1$s ( %4$s%2$s%3$s )"
 
 #. / Order status (%1$s) and date (%2$s), e.g. "received at 2000-01-01"
+#, fuzzy, php-format
 msgid "%1$s at %2$s"
-msgstr ""
+msgstr "%2$s %1$s"
 
 #. / Percent format with value (%1$s) and % sign
+#, fuzzy, php-format
 msgid "%1$s%%"
-msgstr ""
+msgstr "%2$s %1$s"
 
 #. / Service fee value (%1$s) and shipping cost value (%2$s) with currency (%3$s)
 #, php-format
@@ -92,8 +94,9 @@ msgid "+ %1$s %2$s/item"
 msgstr "+ %2$s %1$s/item"
 
 #. / Tax rate format with tax rate in percent (%1$s)
+#, fuzzy, php-format
 msgid "+ %1$s%% VAT"
-msgstr ""
+msgstr "%2$s %1$s"
 
 msgid "+ Payment costs"
 msgstr ""
@@ -108,8 +111,9 @@ msgid "+1 123 456 7890"
 msgstr ""
 
 #. / Rebate percent format with rebate percent value (%1$s)
+#, fuzzy, php-format
 msgid "-%1$s%%"
-msgstr ""
+msgstr "%2$s %1$s"
 
 msgid "Account"
 msgstr ""
@@ -127,8 +131,9 @@ msgstr ""
 msgid "Address with ID \"%1$s\" not found"
 msgstr ""
 
+#, fuzzy
 msgid "Addresses"
-msgstr ""
+msgstr "Address"
 
 msgid ""
 "All deliveries shipped are subject to our terms and conditions, which are available on our website and which you accepted when placing your order.\n"
@@ -163,8 +168,9 @@ msgstr ""
 msgid "Basket"
 msgstr ""
 
+#, fuzzy
 msgid "Billing address"
-msgstr ""
+msgstr "Address"
 
 #, php-format
 msgid "Billing address part \"%1$s\" is invalid"
@@ -189,8 +195,9 @@ msgstr ""
 msgid "Change"
 msgstr ""
 
+#, fuzzy
 msgid "Change payment"
-msgstr ""
+msgstr "Payment"
 
 msgid "Characteristics"
 msgstr ""
@@ -256,17 +263,20 @@ msgstr ""
 msgid "Customer with ID \"%1$s\" not found"
 msgstr ""
 
+#, fuzzy, php-format
 msgid "Dear %1$s %2$s %3$s"
-msgstr ""
+msgstr "%3$s%1$s + %3$s%2$s"
 
 msgid "Dear Sir or Madam"
 msgstr ""
 
+#, fuzzy
 msgid "Delivery"
-msgstr ""
+msgstr "Delivery"
 
+#, fuzzy
 msgid "Delivery address"
-msgstr ""
+msgstr "Address"
 
 #, php-format
 msgid "Delivery address part \"%1$s\" is invalid"
@@ -394,8 +404,9 @@ msgstr ""
 msgid "Next"
 msgstr ""
 
+#, fuzzy
 msgid "Next order"
-msgstr ""
+msgstr "Order"
 
 #, php-format
 msgid "No articles found for <span class=\"searchstring\">\"%1$s\"</span>. Please try again with a different keyword."
@@ -437,8 +448,9 @@ msgstr ""
 msgid "Options"
 msgstr ""
 
+#, fuzzy
 msgid "Order ID"
-msgstr ""
+msgstr "Order"
 
 msgid "Order channel"
 msgstr ""
@@ -472,11 +484,13 @@ msgstr ""
 msgid "Pay now"
 msgstr ""
 
+#, fuzzy
 msgid "Payment"
-msgstr ""
+msgstr "Payment"
 
+#, fuzzy
 msgid "Payment costs"
-msgstr ""
+msgstr "Payment"
 
 msgid "Payment status"
 msgstr ""
@@ -728,17 +742,11 @@ msgid ""
 "You will get an e-mail as soon as the payment is authorized."
 msgstr ""
 
-msgid "The payment couldn't be renewed"
-msgstr ""
-
 #. / Payment e-mail intro with order ID (%1$s), order date (%2$s) and payment
 #. status (%3%s)
 #. / Payment e-mail intro with order ID (%1$s), order date (%2$s) and payment status (%3%s)
 #, php-format
 msgid "The payment for your order %1$s from %2$s has been refunded."
-msgstr ""
-
-msgid "The subscription for the product has ended"
 msgstr ""
 
 msgid "The subscription for the product has ended."
@@ -838,9 +846,6 @@ msgstr ""
 msgid "You will now be forwarded to the next step"
 msgstr ""
 
-msgid "You've cancelled the subscription"
-msgstr ""
-
 msgid "Your account"
 msgstr ""
 
@@ -904,8 +909,9 @@ msgstr ""
 msgid "like billing address"
 msgstr ""
 
+#, fuzzy
 msgid "new address"
-msgstr ""
+msgstr "Address"
 
 msgid "none"
 msgstr ""

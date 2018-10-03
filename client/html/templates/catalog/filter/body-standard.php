@@ -3,7 +3,7 @@
 /**
  * @license LGPLv3, http://opensource.org/licenses/LGPL-3.0
  * @copyright Metaways Infosystems GmbH, 2012
- * @copyright Aimeos (aimeos.org), 2015-2018
+ * @copyright Aimeos (aimeos.org), 2015-2017
  */
 
 /** client/html/catalog/lists/url/target
@@ -102,7 +102,32 @@ $enc = $this->encoder();
 
 
 ?>
-<section class="aimeos catalog-filter" data-jsonurl="<?= $enc->attr( $this->url( $optTarget, $optCntl, $optAction, [], [], $optConfig ) ); ?>">
+<!-- search before filter -->
+<?= $this->block()->get( 'catalog/filter/search' ); ?>
+
+<?php
+	/*
+		TODO
+		find a way to import this from somewhere else
+	*/
+?>
+<!-- promotions banner -->
+<section class="banner row">
+	<div class="col-md-6 col-sm-6">
+		<h4>
+			<?= $enc->html($this->translate('client','Download App'), $enc::TRUST); ?>
+		</h4>
+		<a href="https://play.google.com/store/app/details?id=com.evollu.app"
+			class="link-icon-store-slide google-store-icon"></a>
+		<a href="https://itunes.apple.com/pt/app/evollu/id1237561490?l=en&amp;mt=8"
+			class="link-icon-store-slide app-store-icon"></a>
+	</div>
+	<div class="col-md-6 col-sm-6">
+		<img src="/images/evollu/iphone7.png" alt="phone">
+	</div>
+</section>
+
+<section class="aimeos catalog-filter clearfix" data-jsonurl="<?= $enc->attr( $this->url( $optTarget, $optCntl, $optAction, [], [], $optConfig ) ); ?>">
 
 	<?php if( isset( $this->filterErrorList ) ) : ?>
 		<ul class="error-list">
@@ -119,10 +144,9 @@ $enc = $this->encoder();
 			<?= $this->csrf()->formfield(); ?>
 			<!-- catalog.filter.csrf -->
 
-			<?= $this->block()->get( 'catalog/filter/search' ); ?>
 			<?= $this->block()->get( 'catalog/filter/tree' ); ?>
-			<?= $this->block()->get( 'catalog/filter/supplier' ); ?>
-			<?= $this->block()->get( 'catalog/filter/attribute' ); ?>
+			<?php // $this->block()->get( 'catalog/filter/attribute' ); ?>
+			<?php // $this->block()->get( 'catalog/filter/supplier' ); ?>
 
 		</form>
 	</nav>

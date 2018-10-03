@@ -3,7 +3,7 @@
 /**
  * @license LGPLv3, http://opensource.org/licenses/LGPL-3.0
  * @copyright Metaways Infosystems GmbH, 2012
- * @copyright Aimeos (aimeos.org), 2015-2018
+ * @copyright Aimeos (aimeos.org), 2015-2017
  * @package Client
  * @subpackage Html
  */
@@ -49,6 +49,8 @@ class Base
 	protected static function addDecorators( \Aimeos\MShop\Context\Item\Iface $context,
 		\Aimeos\Client\Html\Iface $client, array $decorators, $classprefix )
 	{
+		$iface = '\\Aimeos\\Client\\Html\\Common\\Decorator\\Iface';
+
 		foreach( $decorators as $name )
 		{
 			if( ctype_alnum( $name ) === false )
@@ -65,7 +67,9 @@ class Base
 
 			$client = new $classname( $client, $context );
 
-			\Aimeos\MW\Common\Base::checkClass( '\\Aimeos\\Client\\Html\\Common\\Decorator\\Iface', $client );
+			if( !( $client instanceof $iface ) ) {
+				throw new \Aimeos\Client\Html\Exception( sprintf( 'Class "%1$s" does not implement "%2$s"', $classname, $iface ) );
+			}
 		}
 
 		return $client;
@@ -158,7 +162,9 @@ class Base
 
 		$client = new $classname( $context );
 
-		\Aimeos\MW\Common\Base::checkClass( $interface, $client );
+		if( !( $client instanceof $interface ) ) {
+			throw new \Aimeos\Client\Html\Exception( sprintf( 'Class "%1$s" does not implement interface "%2$s"', $classname, $interface ) );
+		}
 
 		return $client;
 	}

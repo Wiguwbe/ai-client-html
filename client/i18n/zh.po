@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aimeos-core\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-27 08:31+0200\n"
-"PO-Revision-Date: 2018-09-27 06:36+0000\n"
+"POT-Creation-Date: 2018-07-03 21:45+0200\n"
+"PO-Revision-Date: 2018-07-03 20:43+0000\n"
 "Last-Translator: Aimeos\n"
 "Language-Team: Chinese (http://www.transifex.com/aimeos/aimeos-core/language/zh/)\n"
 "MIME-Version: 1.0\n"
@@ -395,7 +395,7 @@ msgid "Last seen"
 msgstr "最近觀看"
 
 msgid "Latest"
-msgstr "最新"
+msgstr ""
 
 msgid "Like entered by you"
 msgstr ""
@@ -668,7 +668,7 @@ msgid "Sum"
 msgstr "合計"
 
 msgid "Suppliers"
-msgstr "供應商"
+msgstr ""
 
 msgid "Telephone"
 msgstr "電話"
@@ -755,9 +755,6 @@ msgid ""
 "You will get an e-mail as soon as the payment is authorized."
 msgstr "您的訂單正在進行確認支付中。\n在支付通過之後我們將會e-mail通知您。"
 
-msgid "The payment couldn't be renewed"
-msgstr ""
-
 #. / Payment e-mail intro with order ID (%1$s), order date (%2$s) and payment
 #. status (%3%s)
 #. / Payment e-mail intro with order ID (%1$s), order date (%2$s) and payment
@@ -765,9 +762,6 @@ msgstr ""
 #, php-format
 msgid "The payment for your order %1$s from %2$s has been refunded."
 msgstr "您從%2$s下單的訂單%1$s已退款完成。"
-
-msgid "The subscription for the product has ended"
-msgstr ""
 
 msgid "The subscription for the product has ended."
 msgstr ""
@@ -868,9 +862,6 @@ msgstr ""
 
 msgid "You will now be forwarded to the next step"
 msgstr "正在转到下一步"
-
-msgid "You've cancelled the subscription"
-msgstr ""
 
 msgid "Your account"
 msgstr "您的帳戶"

@@ -3,7 +3,7 @@
 /**
  * @license LGPLv3, http://opensource.org/licenses/LGPL-3.0
  * @copyright Metaways Infosystems GmbH, 2014
- * @copyright Aimeos (aimeos.org), 2015-2018
+ * @copyright Aimeos (aimeos.org), 2015-2017
  * @package Client
  * @subpackage Html
  */
@@ -225,11 +225,8 @@ class Standard
 	 */
 	public function addData( \Aimeos\MW\View\Iface $view, array &$tags = [], &$expire = null )
 	{
-		$pos = $pos = $view->param( 'd_pos' );
-
-		if( is_numeric( $pos ) && ( $pid = $view->param( 'd_prodid' ) ) !== null )
+		if( ( $pos = $view->param( 'd_pos' ) ) !== null && ( $pid = $view->param( 'd_prodid' ) ) !== null )
 		{
-
 			if( $pos < 1 ) {
 				$start = 0; $size = 2;
 			} else {

@@ -3,7 +3,7 @@
 /**
  * @license LGPLv3, http://opensource.org/licenses/LGPL-3.0
  * @copyright Metaways Infosystems GmbH, 2012
- * @copyright Aimeos (aimeos.org), 2015-2018
+ * @copyright Aimeos (aimeos.org), 2015-2017
  */
 
 $enc = $this->encoder();
@@ -55,6 +55,7 @@ $enforce = $this->config( 'client/html/catalog/filter/tree/force-search', false 
 
 ?>
 <?php $this->block()->start( 'catalog/filter/tree' ); ?>
+<!-- TODO gotta change this into titles and catalog/filter at all-->
 <section class="catalog-filter-tree <?= ( $counts == true ? 'catalog-filter-count' : '' ); ?>">
 
 	<?php if( $enforce ) : ?>
@@ -64,7 +65,7 @@ $enforce = $this->config( 'client/html/catalog/filter/tree/force-search', false 
 		/>
 	<?php endif; ?>
 
-	<h2><?= $enc->html( $this->translate( 'client', 'Categories' ), $enc::TRUST ); ?></h2>
+<!--	<h2><?= $enc->html( $this->translate( 'client', 'Categories' ), $enc::TRUST ); ?></h2> -->
 
 	<?php if( isset( $params['f_catid'] ) ) : unset( $params['f_catid'], $params['f_name'] ); ?>
 		<div class="category-selected">

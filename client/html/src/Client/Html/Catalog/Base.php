@@ -3,7 +3,7 @@
 /**
  * @license LGPLv3, http://opensource.org/licenses/LGPL-3.0
  * @copyright Metaways Infosystems GmbH, 2014
- * @copyright Aimeos (aimeos.org), 2015-2018
+ * @copyright Aimeos (aimeos.org), 2015-2017
  * @package Client
  * @subpackage Html
  */
@@ -450,7 +450,6 @@ abstract class Base
 		 * @see client/html/catalog/stock/url/controller
 		 * @see client/html/catalog/stock/url/action
 		 * @see client/html/catalog/stock/url/config
-		 * @see client/html/catalog/stock/url/max-items
 		 */
 		$target = $view->config( 'client/html/catalog/stock/url/target' );
 
@@ -467,7 +466,6 @@ abstract class Base
 		 * @see client/html/catalog/stock/url/target
 		 * @see client/html/catalog/stock/url/action
 		 * @see client/html/catalog/stock/url/config
-		 * @see client/html/catalog/stock/url/max-items
 		*/
 		$cntl = $view->config( 'client/html/catalog/stock/url/controller', 'catalog' );
 
@@ -484,7 +482,6 @@ abstract class Base
 		 * @see client/html/catalog/stock/url/target
 		 * @see client/html/catalog/stock/url/controller
 		 * @see client/html/catalog/stock/url/config
-		 * @see client/html/catalog/stock/url/max-items
 		*/
 		$action = $view->config( 'client/html/catalog/stock/url/action', 'stock' );
 
@@ -507,27 +504,9 @@ abstract class Base
 		 * @see client/html/catalog/stock/url/target
 		 * @see client/html/catalog/stock/url/controller
 		 * @see client/html/catalog/stock/url/action
-		 * @see client/html/catalog/stock/url/max-items
+		 * @see client/html/url/config
 		*/
 		$config = $view->config( 'client/html/catalog/stock/url/config', [] );
-
-		/** client/html/catalog/stock/url/max-items
-		 * Maximum number of product stock levels per request
-		 *
-		 * To avoid URLs that exceed the maximum amount of characters (usually 8190),
-		 * each request contains only up to the configured amount of product codes.
-		 * If more product codes are available, several requests will be sent to the
-		 * server.
-		 *
-		 * @param integer Maximum number of product codes per request
-		 * @since 2018.10
-		 * @category Developer
-		 * @see client/html/catalog/stock/url/target
-		 * @see client/html/catalog/stock/url/controller
-		 * @see client/html/catalog/stock/url/action
-		 * @see client/html/catalog/stock/url/config
-		*/
-		$max = $view->config( 'client/html/catalog/stock/url/max-items', 200 );
 
 
 		$codes = [];
@@ -537,13 +516,8 @@ abstract class Base
 		}
 
 		sort( $codes );
-		$urls = [];
 
-		while( ( $list = array_splice( $codes, -$max ) ) !== [] ) {
-			$urls[] = $view->url( $target, $cntl, $action, array( "s_prodcode" => $list ), [], $config );
-		}
-
-		return array_reverse( $urls );
+		return $view->url( $target, $cntl, $action, array( "s_prodcode" => $codes ), [], $config );
 	}
 
 

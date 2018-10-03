@@ -3,7 +3,7 @@
 /**
  * @license LGPLv3, http://opensource.org/licenses/LGPL-3.0
  * @copyright Metaways Infosystems GmbH, 2012
- * @copyright Aimeos (aimeos.org), 2015-2018
+ * @copyright Aimeos (aimeos.org), 2015-2017
  */
 
 $enc = $this->encoder();
@@ -57,9 +57,7 @@ $detailConfig = $this->config( 'client/html/catalog/detail/url/config', [] );
 <?php endif; ?>
 
 <?php if( isset( $this->detailStockUrl ) ) : ?>
-	<?php foreach( (array) $this->detailStockUrl as $url ) : ?>
-		<script type="text/javascript" defer="defer" src="<?= $enc->attr( $url ); ?>"></script>
-	<?php endforeach ?>
+	<script type="text/javascript" defer="defer" src="<?= $enc->attr( $this->detailStockUrl ); ?>"></script>
 <?php endif; ?>
 
 <?= $this->get( 'detailHeader' ); ?>

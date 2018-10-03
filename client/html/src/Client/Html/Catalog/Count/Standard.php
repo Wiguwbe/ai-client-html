@@ -3,7 +3,7 @@
 /**
  * @license LGPLv3, http://opensource.org/licenses/LGPL-3.0
  * @copyright Metaways Infosystems GmbH, 2014
- * @copyright Aimeos (aimeos.org), 2015-2018
+ * @copyright Aimeos (aimeos.org), 2015-2017
  * @package Client
  * @subpackage Html
  */
@@ -68,17 +68,6 @@ class Standard
 	 * @category Developer
 	 */
 
-	/** client/html/catalog/count/supplier/name
-	 * Name of the supplier part used by the catalog count client implementation
-	 *
-	 * Use "Myname" if your class is named "\Aimeos\Client\Html\Catalog\Count\Attribute\Myname".
-	 * The name is case-sensitive and you should avoid camel case names like "MyName".
-	 *
-	 * @param string Last part of the client class name
-	 * @since 2018.07
-	 * @category Developer
-	 */
-
 	/** client/html/catalog/count/attribute/name
 	 * Name of the attribute part used by the catalog count client implementation
 	 *
@@ -89,7 +78,7 @@ class Standard
 	 * @since 2014.03
 	 * @category Developer
 	 */
-	private $subPartNames = ['tree', 'supplier', 'attribute'];
+	private $subPartNames = array( 'tree', 'attribute' );
 	private $view;
 
 

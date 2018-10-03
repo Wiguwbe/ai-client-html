@@ -3,7 +3,7 @@
 /**
  * @license LGPLv3, http://opensource.org/licenses/LGPL-3.0
  * @copyright Metaways Infosystems GmbH, 2014
- * @copyright Aimeos (aimeos.org), 2015-2018
+ * @copyright Aimeos (aimeos.org), 2015-2017
  */
 
 /* Available data:
@@ -32,6 +32,8 @@ $favAction = $this->config( 'client/html/account/favorite/url/action', 'favorite
 $favConfig = $this->config( 'client/html/account/favorite/url/config', [] );
 
 
+$fb_share = 'https://www.facebook.com/sharer.php?u=%1$s&t=%2$s';
+
 /** client/html/catalog/actions/list
  * List of user action names that should be displayed in the catalog detail view
  *
@@ -57,6 +59,9 @@ $urls = array(
 	'favorite' => $this->url( $favTarget, $favController, $favAction, array( 'fav_action' => 'add', 'fav_id' => $prodid ) + $params, $favConfig ),
 );
 
+$prod_name = $this->productItem->getName();
+$iis = $this->productItem->getRefItems('media','default','default');
+$prod_image = ( ( $image = reset($iis) ) !== false ? $this->content($image->getUrl() ) : '' );
 
 ?>
 <div class="catalog-actions">
@@ -67,4 +72,8 @@ $urls = array(
 
 		<?php endif; ?>
 	<?php endforeach; ?>
+	<a class="actions-button social-button-facebook"
+		href="<?= $enc->attr( sprintf($fb_share,$enc->url($prod_name),$enc->url($prod_image) ) ); ?>"
+		title="facebook" target="_blank">
+	</a>
 </div>
